@@ -1,0 +1,223 @@
+  log pdlc.state       INFO  ledger initialized: wallets=3 genesis_hash=afb064d961ff…
+  log pdlc.state       INFO  submit[N0]: ACCEPT — OK
+  log pdlc.state       INFO  submit[N1]: ACCEPT — OK
+  log pdlc.state       INFO  submit[N2]: ACCEPT — OK
+  log pdlc.state       INFO  mempool += f16a094a72181263… (len=1)
+  log pdlc.state       INFO  submit[N0]: ACCEPT — OK
+  log pdlc.state       INFO  submit[N1]: ACCEPT — OK
+  log pdlc.state       INFO  submit[N2]: ACCEPT — OK
+  log pdlc.state       INFO  mempool += 74187ae6bccf9a2d… (len=2)
+  log pdlc.state       INFO  submit[N0]: ACCEPT — OK
+  log pdlc.state       INFO  submit[N1]: ACCEPT — OK
+  log pdlc.state       INFO  submit[N2]: ACCEPT — OK
+  log pdlc.state       INFO  mempool += 7fdd85d370e31eee… (len=3)
+  log pdlc.consensus   INFO  [N0] P1 (4b1057a490fe…) → OK
+  log pdlc.consensus   INFO  [N0] P2 (adc4a89845bd…) → OK
+  log pdlc.consensus   INFO  [N0] P3 (245f61915d9a…) → REJECT (транзакция 08fcd909fb8e4448…: неверная электронная подпись)
+  log pdlc.consensus   INFO  [N0] vote → 4b1057a490fe…
+  log pdlc.consensus   INFO  [N1] P1 (4b1057a490fe…) → OK
+  log pdlc.consensus   INFO  [N1] P2 (adc4a89845bd…) → OK
+  log pdlc.consensus   INFO  [N1] P3 (245f61915d9a…) → REJECT (транзакция 08fcd909fb8e4448…: неверная электронная подпись)
+  log pdlc.consensus   INFO  [N1] vote → 4b1057a490fe…
+  log pdlc.consensus   INFO  [N2] P1 (4b1057a490fe…) → OK
+  log pdlc.consensus   INFO  [N2] P2 (adc4a89845bd…) → OK
+  log pdlc.consensus   INFO  [N2] P3 (245f61915d9a…) → REJECT (транзакция 08fcd909fb8e4448…: неверная электронная подпись)
+  log pdlc.consensus   INFO  [N2] vote → 4b1057a490fe…
+  log pdlc.consensus   INFO  tally = {'4b1057a490fe37d15ff772758f6df486f1576be701d6d0197f7fa38799ffa4ba': 3}
+  log pdlc.state       INFO  block 1 applied: producer=P1  tip=4b1057a490fe…
+  log pdlc.state       INFO  submit[N0]: ACCEPT — OK
+  log pdlc.state       INFO  submit[N1]: ACCEPT — OK
+  log pdlc.state       INFO  submit[N2]: ACCEPT — OK
+  log pdlc.state       INFO  mempool += 5d170478b3525e5d… (len=1)
+  log pdlc.state       INFO  submit[N0]: ACCEPT — OK
+  log pdlc.state       INFO  submit[N1]: ACCEPT — OK
+  log pdlc.state       INFO  submit[N2]: ACCEPT — OK
+  log pdlc.state       INFO  mempool += a217bc6e1b58eb83… (len=2)
+  log pdlc.consensus   INFO  [N0] PX (642a526c0499…) → OK
+  log pdlc.consensus   INFO  [N0] PY (b85c2dfdbf64…) → OK
+  log pdlc.consensus   INFO  [N0] vote → 642a526c0499…
+  log pdlc.consensus   INFO  [N1] PX (642a526c0499…) → OK
+  log pdlc.consensus   INFO  [N1] PY (b85c2dfdbf64…) → OK
+  log pdlc.consensus   INFO  [N1] vote → 642a526c0499…
+  log pdlc.consensus   INFO  [N2] PX (642a526c0499…) → OK
+  log pdlc.consensus   INFO  [N2] PY (b85c2dfdbf64…) → OK
+  log pdlc.consensus   INFO  [N2] vote → 642a526c0499…
+  log pdlc.consensus   INFO  tally = {'642a526c04997bb6fd3d703a0b245242d6e2f94c80b6e0be7c58a92d190e653f': 3}
+  log pdlc.consensus   INFO  [N0] PY (b85c2dfdbf64…) → OK
+  log pdlc.consensus   INFO  [N0] PX (642a526c0499…) → OK
+  log pdlc.consensus   INFO  [N0] vote → 642a526c0499…
+  log pdlc.consensus   INFO  [N1] PY (b85c2dfdbf64…) → OK
+  log pdlc.consensus   INFO  [N1] PX (642a526c0499…) → OK
+  log pdlc.consensus   INFO  [N1] vote → 642a526c0499…
+  log pdlc.consensus   INFO  [N2] PY (b85c2dfdbf64…) → OK
+  log pdlc.consensus   INFO  [N2] PX (642a526c0499…) → OK
+  log pdlc.consensus   INFO  [N2] vote → 642a526c0499…
+  log pdlc.consensus   INFO  tally = {'642a526c04997bb6fd3d703a0b245242d6e2f94c80b6e0be7c58a92d190e653f': 3}
+  log pdlc.state       INFO  block 2 applied: producer=PX  tip=642a526c0499…
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ЭТАП I — Генерация кошельков и инициализация реестра
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  A: pub = 2f09efca539ff51cda372476670bc71ef388389c8af44e5ccc325f137aa5c8e7
+      addr = SHA-256(pub) = c906c9e5c0756c9b78761fbe36ffa592d2a164bd0d946e9ad147a204bdb89b73
+  B: pub = 83603b79f1010436eb3a570899ba9fb3af4381775f39433cd727f99e9198c2d3
+      addr = SHA-256(pub) = 3ecc13f8009ab155c755fff333a386a1e1bea3ed85065092790d2bdddc9fd4e4
+  C: pub = 7563aca09d5d4cddce8393200e43e1a2ad1ec91a0346a71ab96e59474fa84cca
+      addr = SHA-256(pub) = 2199b05fa05a603a6c705df274e6a4e5c5c1c5375731efc80e7661ad3d105c2a
+
+── Начальное состояние (из allocations) ──
+height = 0
+tip    = afb064d961ff9582a2aa3c370e4905ddd2efb5e26dfd57d565e0b698e6eeba65
+  C    balance= 100  next_nonce=0
+  B    balance= 100  next_nonce=0
+  A    balance= 100  next_nonce=0
+  mempool: 0 tx
+
+  genesis.block_hash = afb064d961ff9582a2aa3c370e4905ddd2efb5e26dfd57d565e0b698e6eeba65
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ЭТАП II — Проверка подписи сообщения
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  подписали ключом A сообщение 'Blockchain lab 2'
+  signature = 9ccdafea95dbc3d252704d4801665e1274b48fc872fb435a146b4a2bfbba70271169de870da2fa5c8a7607f9e580ffecbfd284690bdf62f1a21a4bc3c765880f
+  verify(A.pub, msg1, sig) = True   (True)
+  verify(A.pub, msg2, sig) = False   (False)
+  verify(B.pub, msg1, sig) = False   (False)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ЭТАП III — Контрольный сценарий A→B 10, B→C 20, C→A 5
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[tx1 A→B 10]
+
+[tx2 B→C 20]
+
+[tx3 C→A 5]
+
+── После добавления в mempool ──
+height = 0
+tip    = afb064d961ff9582a2aa3c370e4905ddd2efb5e26dfd57d565e0b698e6eeba65
+  C    balance= 100  next_nonce=0
+  B    balance= 100  next_nonce=0
+  A    balance= 100  next_nonce=0
+  mempool: 3 tx
+
+  Пример полной подписанной транзакции (tx1):
+{
+  "sender": "c906c9e5c0756c9b78761fbe36ffa592d2a164bd0d946e9ad147a204bdb89b73",
+  "recipient": "3ecc13f8009ab155c755fff333a386a1e1bea3ed85065092790d2bdddc9fd4e4",
+  "amount": 10,
+  "nonce": 0,
+  "public_key": "2f09efca539ff51cda372476670bc71ef388389c8af44e5ccc325f137aa5c8e7",
+  "tx_id": "f16a094a7218126366b428fc817c6405bc91edbe5ad2be7fb5f8f35ebeffd3e8",
+  "signature": "75f3456a983662e49698e100ffc7069fe4aecd78de37161a8eb2f3bf4333f909e30c29b618e233d91ea671f952daab1b35480ea1e500ed1c3425882b90d74609"
+}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ЭТАП IV — Дерево Меркла для 1, 2 и 3 транзакций
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[1 транзакц.]
+  листья:
+    L0 = b2c8c8d728af9cc21b45c4f90dd198dded96c7a639b84a0c10096dad712f235b
+  merkle_root = b2c8c8d728af9cc21b45c4f90dd198dded96c7a639b84a0c10096dad712f235b
+
+[2 транзакц.]
+  листья:
+    L0 = b2c8c8d728af9cc21b45c4f90dd198dded96c7a639b84a0c10096dad712f235b
+    L1 = ce2abfdb1987ff73518b41fc7a443a3258d906b080966993e6250eb9d68c5e54
+  уровень 1:
+    N0 = 1e5cdd3e98b077ad95bf7f03a96071997067d69b3249eb7c15d9afaf1d6f0091
+  merkle_root = 1e5cdd3e98b077ad95bf7f03a96071997067d69b3249eb7c15d9afaf1d6f0091
+
+[3 транзакц.]
+  листья:
+    L0 = b2c8c8d728af9cc21b45c4f90dd198dded96c7a639b84a0c10096dad712f235b
+    L1 = ce2abfdb1987ff73518b41fc7a443a3258d906b080966993e6250eb9d68c5e54
+    L2 = dbc35cc98d1c66ecd1529bfab94b57c5bb75f4cd365d4893a5c8a916c904623d
+  уровень 1:
+    N0 = 1e5cdd3e98b077ad95bf7f03a96071997067d69b3249eb7c15d9afaf1d6f0091
+    N1 = cb3c85e572c7c22411f20f42eebbe74fb60a93e7458afd973e4365616cd14255
+  уровень 2:
+    N0 = 52d5cd80df7f9754ddd7c36dccec46ef308806e31238546d0e6805b37997a12f
+  merkle_root = 52d5cd80df7f9754ddd7c36dccec46ef308806e31238546d0e6805b37997a12f
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ЭТАП V — Конфликт B1, B2, B3 и голосование
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  B1: producer=P1  index=1  prev_hash=afb064d961ff…
+      merkle_root = 52d5cd80df7f9754ddd7c36dccec46ef308806e31238546d0e6805b37997a12f
+      block_hash  = 4b1057a490fe37d15ff772758f6df486f1576be701d6d0197f7fa38799ffa4ba
+
+  B2: producer=P2  index=1  prev_hash=afb064d961ff…
+      merkle_root = 2d29b0c63608d90549b07601adaab61e11dc90f2644f3a92e96f33e0d872eac2
+      block_hash  = adc4a89845bd48efb249540140bde65c20c8b846a83657d28bf7af47d1671929
+
+  B3: producer=P3  index=1  prev_hash=afb064d961ff…
+      merkle_root = 321f111eed349473453a1a68ac48c89d489baff353411f0931f2fedb8ec61c6c
+      block_hash  = 245f61915d9acd9a1db3a13d50ff201983cced4de3d7ef1e609ee32af4306b67
+
+[голосование]
+  status = ACCEPTED
+  winner = P1 (hash 4b1057a490fe…)
+
+── После принятия (producer=P1) ──
+height = 1
+tip    = 4b1057a490fe37d15ff772758f6df486f1576be701d6d0197f7fa38799ffa4ba
+  C    balance= 115  next_nonce=1
+  B    balance=  90  next_nonce=1
+  A    balance=  95  next_nonce=1
+  mempool: 0 tx
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ЭТАП VI — Отрицательные проверки (таблица 2 ТЗ)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[VI.1] Перестановка кандидатов — итог не меняется
+  → итог одинаков: 642a526c0499…
+
+[VI.2] Подмена amount при сохранённой подписи
+  verify = False  reason = неверная электронная подпись
+
+[VI.3] Недопустимые суммы 0 / -1 / 1.5 / True
+  amount=0 → отклонено: amount должен быть положительным int
+  amount=-1 → отклонено: amount должен быть положительным int
+  amount=1.5 → отклонено: amount должен быть положительным int
+  log pdlc.state       INFO  submit[N0]: ACCEPT — OK
+  log pdlc.state       INFO  submit[N1]: ACCEPT — OK
+  log pdlc.state       INFO  submit[N2]: ACCEPT — OK
+  log pdlc.state       INFO  mempool += 9f173be44cc24ce0… (len=1)
+  log pdlc.state       WARNING submit: у A уже есть pending — отклоняем
+  log pdlc.consensus   INFO  [N0] PX (ffffffffffff…) → REJECT (неверный index: ожидался 3, пришёл 2)
+  log pdlc.consensus   INFO  [N0] NO_VOTE
+  log pdlc.consensus   INFO  [N1] PX (ffffffffffff…) → REJECT (неверный index: ожидался 3, пришёл 2)
+  log pdlc.consensus   INFO  [N1] NO_VOTE
+  log pdlc.consensus   INFO  [N2] PX (ffffffffffff…) → REJECT (неверный index: ожидался 3, пришёл 2)
+  log pdlc.consensus   INFO  [N2] NO_VOTE
+  log pdlc.consensus   INFO  tally = {}
+  amount=True → отклонено: amount должен быть положительным int
+
+[VI.4] Перерасход баланса
+  verify = False  reason = недостаточно средств: баланс 94, требуется 10000
+
+[VI.5] Повтор по nonce (nonce=0 для A уже использован)
+  verify = False  reason = неверный nonce (ожидался 2, пришёл 0)
+
+[VI.6] Вторая pending того же отправителя
+  mempool len = 1   (ожидали 1)
+
+[VI.7] Все кандидаты некорректны → NO_QUORUM
+  status = NO_QUORUM   (ожидали NO_QUORUM)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ЭТАП VII — Итоговое состояние
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+height = 2
+tip    = 642a526c04997bb6fd3d703a0b245242d6e2f94c80b6e0be7c58a92d190e653f
+  C    balance= 116  next_nonce=1
+  B    balance=  90  next_nonce=2
+  A    balance=  94  next_nonce=2
+  mempool: 0 tx
+
+  суммарный баланс = 300  (должно быть 300)
